@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #404040;
+    font-family: 'Source Sans Pro', sans-serif; 
+    font-size: 1rem;
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url(img/barbecue2.jpg);
+    background-position: center;
+    background-color: #404040;
+    background-size: cover; 
+    padding: 0 .5em 2em;
+    min-height: 50vh;
+}
+
+.intro *,
+.content {
+    max-width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: #fff;
+    margin: 2em 0;
+    
+}
+
+h1 + p {
+    color: #F18119;
+    font-weight: 900;
+    font-size: 1.3125rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.top-text {
+    font-size: 0.625rem;
+    color: #F18119;
+    text-transform: uppercase;
+    order: -1;
+    font-weight: 900;
+}
+
+strong {
+    font-weight: 900;
+}
+
+/* Content */
+
+h2 {
+    font-size: 1.3125rem;
+    margin: 0;
+}
+
+h2 + p {
+    font-weight: 900;
+    color: #F18119;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.content {
+    padding: 2em 1em;
+}
+
+.fine-print {
+    font-size: 0.625rem;
+    letter-spacing: 1px;
+}
+
+/* media queries */
+
+@media (min-width: 550px) {
+    body {
+        font-size: 1.125rem;
+        display: flex;
+        
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+      
+    }
+    
+    h2,
+    h1 + p {
+        font-size: 1.75rem;
+    }
+    
+    .intro,
+    .content {
+        width: 50%;
+        min-height: 100vh;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
