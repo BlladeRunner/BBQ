@@ -14,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(img/barbecue2.jpg);
+    background-image: url(img/barbecue2.jpg), linear-gradient(45deg,red, blue);
+    background-blend-mode: soft-light;
     background-position: center;
     background-color: #404040;
     background-size: cover; 
@@ -42,7 +43,7 @@ h1 + p {
     font-weight: 900;
     font-size: 1.3125rem;
     text-transform: uppercase;
-    margin: 0;
+    margin-top: 0;
 }
 
 .top-text {
@@ -51,6 +52,10 @@ h1 + p {
     text-transform: uppercase;
     order: -1;
     font-weight: 900;
+    border-top: 5px solid #F18119;
+    margin: 0 auto;
+    padding: 2px;
+    border-image: linear-gradient(to left, #ff713b, #ffa51d) 1;
 }
 
 strong {
@@ -91,22 +96,39 @@ input, .btn {
 }
 
 input {
-    margin-bottom: 0.75em;
+    margin-bottom: .75em;
     padding: .8em;
     text-align: inherit;
+    font-family: inherit;
+    border: 1px solid #404040;
+    transition: transform 250ms;
+}
+
+input:focus {
+    transform: scale(1.1);
 }
 
 .btn {
-    background: #F18119;
-    color: rgb(0, 49, 0);
-    padding: .5em 3.7em;
-    font-size: 1.1em;
+    display: inline-block;
+    padding: 1em 1.5em;
+    font-size: .8rem;
+    text-transform: uppercase;
     border: 0;
     cursor: pointer;
+    font-weight: 900;
+    letter-spacing: 2px;
 }
 
-button:hover {
-    background: rgb(56, 182, 56);
+.btn-primary {
+    background-image: linear-gradient(to left, #FF713B, #FFA51D);
+    color: white;
+    transform: scale(1);
+    transition: transform 250ms;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    transform: scale(1.1);
 }
 
 /* media queries */
