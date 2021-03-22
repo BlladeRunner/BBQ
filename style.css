@@ -80,6 +80,35 @@ h2 + p {
     letter-spacing: 1px;
 }
 
+form {
+
+    padding: 2em;
+}
+
+input, .btn {
+    width: 100%;
+    border-radius: 5px;
+}
+
+input {
+    margin-bottom: 0.75em;
+    padding: .8em;
+    text-align: inherit;
+}
+
+.btn {
+    background: #F18119;
+    color: rgb(0, 49, 0);
+    padding: .5em 3.7em;
+    font-size: 1.1em;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgb(56, 182, 56);
+}
+
 /* media queries */
 
 @media (min-width: 550px) {
